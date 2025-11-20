@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ollama-pvc
+  namespace: n8n
+  labels:
+    app: llama-server
+    app.kubernetes.io/component: llama-server
+    app.kubernetes.io/instance: llama-server
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 15Gi
