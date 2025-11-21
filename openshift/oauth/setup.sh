@@ -1,3 +1,9 @@
+# Get the cluster domain name
+export CLUSTER_DOMAIN_NAME=`oc get ingresses.config/cluster -o jsonpath='{.spec.domain}'`
+
+# Process LitemaaS OAuthClient client template
+envsubst < ./litemass-oauth.yaml.template > ./litemass-oauth.yaml.local
+
 # Create OAuthClient client for LitemaaS
 oc apply -f litemass-oauth.yaml.local
 
