@@ -8,5 +8,8 @@ for template in *.yaml.template; do
     envsubst < "$template" > "${template%.template}.local"
 done
 
+# Configure OAuthClient for LitemaaS
+envsubst < ./oauth/litemass-oauth.yaml > ./oauth/litemass-oauth.yaml.local
+
 # Rename processed kustomize
 mv kustomization.yaml.local kustomization.yaml

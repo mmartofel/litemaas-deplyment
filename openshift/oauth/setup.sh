@@ -1,3 +1,6 @@
+# Create OAuthClient client for LitemaaS
+oc apply -f litemass-oauth.yaml.local
+
 # Create htpasswd file with users and passwords
 htpasswd -c -B -b ocp.htpasswd admin admin
 htpasswd -B -b ocp.htpasswd user1 user1
