@@ -5,6 +5,8 @@ metadata:
   labels:
     app: litellm
     component: ai-proxy
+    app.kubernetes.io/part-of: 'LITELLM'
+    app.openshift.io/runtime: python
 spec:
   replicas: 1
   selector:

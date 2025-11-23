@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/component: AI
     app.kubernetes.io/name: llama-server
     app.kubernetes.io/part-of: 'LLM-SERVER'
-    app.openshift.io/runtime: llama
+    app.openshift.io/runtime: golang
 spec:
   replicas: 1
   selector:

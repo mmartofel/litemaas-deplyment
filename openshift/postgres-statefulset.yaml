@@ -5,6 +5,8 @@ metadata:
   labels:
     app: postgres
     component: database
+    app.kubernetes.io/part-of: 'LITELLM'
+    app.openshift.io/runtime: postgresql
 spec:
   serviceName: postgres
   replicas: 1
