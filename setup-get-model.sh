@@ -1,16 +1,27 @@
+#!/bin/bash
 
-LLAMA_HOST=`oc get route llama -n litemaas -o jsonpath='{.spec.host}'`
+# 🔍 Get external route
+LLAMA_HOST=$(oc get route llama -n litemaas -o jsonpath='{.spec.host}')
 
-curl http://{$LLAMA_HOST}/api/pull -d '{
-  "model": "ollama/granite4"
-}'
+echo
+echo "🌐 LLAMA HOST: $LLAMA_HOST"
+echo
 
-curl http://{$LLAMA_HOST}/api/pull -d '{
-  "model": "ollama/llama2"
-}'
+# 📥 Pull models
+echo "⬇️  Pulling models..."
+curl -s "https://$LLAMA_HOST/api/pull" -d '{"model":"granite4"}'
+curl -s "https://$LLAMA_HOST/api/pull" -d '{"model":"llama2"}'
+curl -s "https://$LLAMA_HOST/api/pull" -d '{"model":"mistral"}'
 
-curl http://{$LLAMA_HOST}/api/pull -d '{
-  "model": "ollama/mistral"
-}'
+echo
+echo "📦 Available models:"
+echo
 
-curl http://{$LLAMA_HOST}/api/tags
+# 🧠 List models with icons
+curl -s "https://$LLAMA_HOST/api/tags" \
+  | jq -r '.models[].name' \
+  | sed 's/^/🧩 /'
+
+echo
+echo "✅ Model setup complete."
+echo
