@@ -26,8 +26,18 @@ data/postgres/
 data/litellm/
 example-data/
 
+# Keys and credentials
+key.txt
+*.pem
+*.crt
+*.env
+credentials.yaml
+
 # OpenShift htpasswd file
 ocp.htpasswd
 
 # Skip llocal configuration files generated for your cluster
 *.local
+
+# Python  virtual environment
+venv

@@ -1,6 +1,8 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
+  name: llama-server
+  namespace: litemaas
   annotations:
     app.openshift.io/vcs-uri: 'https://github.com/mmartofel/'
   labels:
@@ -9,8 +11,6 @@ metadata:
     app.kubernetes.io/name: llama-server
     app.kubernetes.io/part-of: 'LLM-SERVER'
     app.openshift.io/runtime: llama
-  name: llama-server
-  namespace: n8n
 spec:
   replicas: 1
   selector:

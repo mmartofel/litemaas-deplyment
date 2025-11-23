@@ -1,8 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: llama-server-service
-  namespace: n8n
+  name: llama
+  namespace: litemaas
+  annotations:
+    app.openshift.io/vcs-uri: 'https://github.com/mmartofel/'
   labels:
     app: llama-server
     app.kubernetes.io/component: llama-server

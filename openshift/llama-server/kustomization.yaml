@@ -1,4 +1,5 @@
 resources:
+ - role-binding.yaml
  - pvc.yaml
  - deployment.yaml
  - service.yaml
