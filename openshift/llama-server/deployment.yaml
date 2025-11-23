@@ -35,13 +35,13 @@ spec:
             requests:
               cpu: '4'
               memory: 4Gi
-          volumes:
-           - name: ollama-pvc
-             persistentVolumeClaim:
-             claimName: ollama-pvc
-      volumeMounts:
-        - mountPath: /.ollama
-          name: ollama-pvc
+          volumeMounts:
+            - mountPath: /root/.ollama
+              name: ollama-models
+      volumes:
+        - name: ollama-models
+          persistentVolumeClaim:
+            claimName: ollama-pvc
       terminationMessagePath: /dev/termination-log
       terminationMessagePolicy: File
       imagePullPolicy: IfNotPresent
