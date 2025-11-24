@@ -101,7 +101,7 @@ openshift/
 ├── oauth/                    # OAuth setup scripts
 ├── llama-server/             # Llama server deployment & model setup scripts
 ├── kustomization.yaml        # OpenShift kustomization templates
-deploy.sh                     # Main deployment script
+setup.sh                     # Main deployment script
 ```
 
 ---

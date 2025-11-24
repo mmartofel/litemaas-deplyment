@@ -8,6 +8,7 @@ namespace: litemaas
 resources:
   # Namespace
   - namespace.yaml.local
+  - namespace-resourcequota.yaml.local
 
   # Secrets (must be created/customized before deployment)
   - postgres-secret.yaml.local
