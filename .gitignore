@@ -41,3 +41,6 @@ ocp.htpasswd
 
 # Python  virtual environment
 venv
+
+# Remove kustomization file
+kustomization.yaml
