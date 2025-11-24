@@ -33,6 +33,7 @@ echo "☸️ Deploying LiteLLM and LitemaaS components..."
 oc apply -k ./openshift
 
 # 🦙 Deploy Llama server to OpenShift
+echo
 echo "🦙 Deploying Llama server..."
 oc apply -k ./openshift/llama-server
 
