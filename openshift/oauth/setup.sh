@@ -24,6 +24,9 @@ oc apply -f oauth-provider-from-htpasswd-secret.yaml
 oc adm groups new litemaas-admins
 oc adm groups add-users litemaas-admins admin
 
+# Grant cluster-admin role to admin user as well
+oc adm policy add-cluster-role-to-user cluster-admin admin
+
 # Create read-only admin group and add user1
 oc adm groups new litemaas-readonly
 oc adm groups add-users litemaas-readonly user1
