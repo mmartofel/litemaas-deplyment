@@ -1,6 +1,6 @@
 # 🌟 LiteMaaS Deployment
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-mm-martofel-blue)](https://github.com/mmartofel/litemaas-deplyment)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-mmartofel-blue)](https://github.com/mmartofel/litemaas-deplyment)
 [![OpenShift Ready](https://img.shields.io/badge/OpenShift-Ready-brightgreen)](https://www.openshift.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
@@ -8,7 +8,14 @@
 
 ## 📖 Overview
 
-This repository contains **deployment scripts and templates** to run **LiteLLM**, **LitemaaS**, and the **Llama server** on **OpenShift**.  
+This repository contains **deployment scripts and templates** to run **LiteLLM**, **LiteMaaS**, and the **Ollama server** on **OpenShift**.  
+
+**LiteMaaS** is a proof-of-concept application for managing LLM subscriptions, API keys, and usage tracking. It seamlessly integrates with LiteLLM to provide a unified interface for accessing multiple LLMs with comprehensive budget management.
+
+Please visit **LiteMaaS** repository at https://github.com/rh-aiservices-bu/litemaas
+
+Built with ❤️ by the [CAI Team](http://red.ht/cai-team)
+
 It automates:
 
 - OAuth setup  
