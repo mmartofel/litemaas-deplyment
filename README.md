@@ -51,6 +51,13 @@ It automates:
 
 ## ⚡ Quick Deployment
 
+Before you begin please setup your Red Hat OpenShift cluster with correct SSL certifficates.
+I experienced several issues with self signed ones therefore I created a repo explaining how to set OpenShift with Let's Encrypt issued certifficates. Please hear to this repo to check how it can be done:
+
+- [https://github.com/mmartofel/ocp-lets-encrypt-certifficates](https://github.com/mmartofel/ocp-lets-encrypt-certifficates)
+
+or do it your own, known way.
+
 ### 1️⃣ Clone the repository
 
 ```bash
