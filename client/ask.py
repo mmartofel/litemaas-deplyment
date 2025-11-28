@@ -7,7 +7,7 @@ from litellm import completion
 # -------------------------------
 # CONFIG
 # -------------------------------
-API_BASE = "https://llama-litemaas.apps.heniek.sandbox2353.opentlc.com"  # put here your Ollama server URL
+API_BASE = "https://llama-litemaas.apps.psotka.sandbox5324.opentlc.com"  # put here your Ollama server URL
 MODEL = "ollama/granite4" # name must match what the Ollama server serves
 # -------------------------------
 

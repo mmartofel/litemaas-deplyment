@@ -7,8 +7,8 @@ from openai import OpenAI
 # -------------------------------
 # CONFIG
 # -------------------------------
-API_BASE = "https://litellm-litemaas.apps.heniek.sandbox2353.opentlc.com" # put here your litellm proxy URL
-API_KEY = "sk-something" # now api key is required, even if LiteLLM proxy does not validate it
+API_BASE = "https://litemaas-litemaas.apps.psotka.sandbox5324.opentlc.com" # put here your litellm proxy URL
+API_KEY = "sk-f2wLN-QRji9ldFNKddi_cA" # now api key is required, even if LiteLLM proxy does not validate it
 MODEL = "ollama/llama2"  # name must match what the proxy serves
 # -------------------------------
 
