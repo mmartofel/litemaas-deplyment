@@ -2,5 +2,6 @@ resources:
  - role-binding.yaml
  - pvc.yaml
  - deployment.yaml
+ # - deployment-cpu.yaml
  - service.yaml
  - route.yaml
