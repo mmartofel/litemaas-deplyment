@@ -32,6 +32,7 @@ key.txt
 *.crt
 *.env
 credentials.yaml
+user-values.env
 
 # OpenShift htpasswd file
 ocp.htpasswd
