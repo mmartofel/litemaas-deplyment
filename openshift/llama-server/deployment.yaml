@@ -40,6 +40,21 @@ spec:
           volumeMounts:
             - mountPath: /root/.ollama
               name: ollama-models
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 11434
+              scheme: HTTP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 11434
+              scheme: HTTP
+          startupProbe:
+            httpGet:
+              path: /
+              port: 11434
+              scheme: HTTP
       volumes:
         - name: ollama-models
           persistentVolumeClaim:
